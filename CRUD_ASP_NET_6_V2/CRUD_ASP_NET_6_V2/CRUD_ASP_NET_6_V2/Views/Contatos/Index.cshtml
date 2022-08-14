@@ -1,0 +1,62 @@
+﻿@model IEnumerable<CRUD_ASP_NET_6_V2.Models.Contatos>
+
+@{
+    ViewData["Title"] = "Novo contato";
+}
+
+
+<p>
+    <a asp-action="novo_contato" class="btn btn-outline-success"><i class="far fa-plus-square"></i> Novo contato</a>
+</p>
+
+<br>
+
+
+
+<table class="table table-hover" id="table-contatos">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sexo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Data)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Codcontato)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sexo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Codcontato)
+            </td>
+            <td>
+                <a asp-action="novo_contato" asp-route-id="@item.Id" class="btn btn-outline-primary"> <i class="fa fa-marker fa-lg"></i> Alterar</a> 
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger" onclick="return confirm('Deseja realmente deletar ?')"><i class="fa fa-trash-alt fa lg"></i> Excluir</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

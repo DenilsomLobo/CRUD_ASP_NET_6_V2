@@ -1,0 +1,13 @@
+INSERT INTO contatos VALUES
+(DEFAULT, 'Thiago', 'Masculino', '1987-01-26','Bicas', '32988775514'),
+(DEFAULT, 'Rodrigo', 'Masculino', '1989-01-15','Bicas', '32988896330'),
+(DEFAULT, 'Larisa', 'Feminino', '2005-01-22','Bicas', '32991956334'),
+(DEFAULT, 'Fabio', 'Masculino', '1991-02-26','Bicas', '32985966426'),
+(DEFAULT, 'Fabricia', 'Feminino', '1988-01-18','Bicas', '32988773314'),
+(DEFAULT, 'Icaro', 'Masculino', '2013-01-12','Juiz de fora', '32984059633'),
+(DEFAULT, 'Lais', 'Feminino', '1996-01-06','Juiz de fora', '32985913566'),
+(DEFAULT, 'Thiago', 'Feminino', '1995-01-17','Juiz de fora', '32988959135'),
+(DEFAULT, 'Bruno', 'Masculino', '1996-02-18','Juiz de fora', '32985913566'),
+(DEFAULT, 'Pamela', 'Feminino', '1995-02-16','Juiz de fora', '32988663996'),
+(DEFAULT, 'Rodolfo', 'Masculino', '1990-04-16','Juiz de fora', '32988639299'),
+(DEFAULT, 'Beatris', 'Feminino', '1995-04-24','Juiz de fora', '32991356627');
